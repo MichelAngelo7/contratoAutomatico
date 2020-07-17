@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
-  <h1>Dados das partes</h1>
-  <form method="POST">
-    <input type="text" name="locador">Locador
-    <input type="text" name="cpfNumber">CPF do Locador
-    <input type="text" name="identityNumber">Numero de identidade
-    <div>
-      <input type="radio" name="identityState" value="MG">MG
-    </div>
-    <input type="text" name="address">Endereco
-    <input type="number" name="addressNumber">Numero
-    <input type="text" name="neightborhood">Bairro
-    <input type="number" name="zipCode">CEP do Locador
-    <input type="text" name="city" >Cidade
-    <input type="text" name="state">Estado
 
-  </form>
+<body>
+  <div class="imageBackgorund">
+    <h1>Dados das partes</h1>
+    <div class="formMaster">
+      <div class="locator">
+        Dados do Locador
+        <form method="POST">
+          Nome:
+          <input type="text" name="locador">
+          CPF:
+          <input type="text" name="cpfNumber">
+          Numero de identidade:
+          <input type="text" name="identityNumber">
+          <div>
+            <input type="radio" name="identityState" value="MG">MG
+          </div>
+          Endereço:
+          <input type="text" name="address">
+          Numero:
+          <input type="number" name="addressNumber">
+          Bairro:
+          <input type="text" name="neightborhood">
+          CEP:
+          <input type="number" name="zipCode">
+          Cidade
+          <input type="text" name="city">
+          Estado
+          <input type="text" name="state">
+      </div>
+
+      <div class="tenant">
+        Dados do Locatário
+        Nome:
+        <input type="text" name="locador">
+        CPF:
+        <input type="text" name="cpfNumber">
+        Numero de identidade:
+        <input type="text" name="identityNumber">
+        <div>
+          <input type="radio" name="identityState" value="MG">MG
+        </div>
+        Endereço:
+        <input type="text" name="address">
+        Numero:
+        <input type="number" name="addressNumber">
+        Bairro:
+        <input type="text" name="neightborhood">
+        CEP:
+        <input type="number" name="zipCode">
+        Cidade
+        <input type="text" name="city">
+        Estado
+        <input type="text" name="state">
+      </div>
+      <button type="submit">Gerar Contrato</button>
+      </form>
+
+    </div>
+  </div>
 </body>
+
 </html>
 
 
 <style>
-  input{
+  input {
     display: block;
     margin-top: 10px;
   }
